@@ -82,8 +82,6 @@ const defaultProps: DefaultProps = {
 
 type RequiredProps = {
   label?: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 
