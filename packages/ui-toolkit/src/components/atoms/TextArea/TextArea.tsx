@@ -18,7 +18,7 @@ const TextArea = (props: Props) => {
     ...restProps
   } = props;
 
-  const textAreaClassName = cn({
+  const textAreaClassName = cn('backgroundSurfacePrimary', {
     'txta37Area': true,
     'txta37Normal': error?.length === 0,
     'txta37Error': error && error.length !== 0

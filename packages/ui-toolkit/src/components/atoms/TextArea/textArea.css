@@ -6,7 +6,7 @@
 .txta37Area {
   resize: none;
   border-radius: 8px;
-  caret-color: var(--priamryClr);
+  caret-color: var(--green500);
   padding: 16px;
   color: var(--gray900);
   font-size: 16px;
