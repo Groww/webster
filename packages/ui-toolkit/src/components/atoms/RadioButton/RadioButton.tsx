@@ -16,7 +16,8 @@ const RadioButton = (props: Props) => {
     onSelect,
     radioDirection,
     dataTestId,
-    isDisabled
+    isDisabled,
+    labelClassName
   } = props;
 
   const iconColor = isDisabled ? 'var(--gray400)' : 'var(--green500)';
@@ -32,7 +33,7 @@ const RadioButton = (props: Props) => {
     bodyBase: size === SIZES.BASE,
     bodyLarge: size === SIZES.LARGE,
     bodyXLarge: size === SIZES.XLARGE
-  });
+  }, labelClassName);
 
 
   const radioButtonClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -92,6 +93,7 @@ type RequiredProps = {
   label: React.ReactNode;
   isSelected: boolean;
   onSelect: () => void;
+  labelClassName?: string;
 }
 
 
